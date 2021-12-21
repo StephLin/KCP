@@ -1,0 +1,29 @@
+PROJECT_NAME           = KCP
+PROJECT_BRIEF          = "An efficient and effective 3D laser scan matching"
+
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BINARY_DIR@/docs/
+
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/docs/mainpage.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/docs/installation.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/docs/examples.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/docs/remarks.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/kcp
+RECURSIVE              = YES
+GENERATE_TREEVIEW      = YES
+
+IMAGE_PATH             = @CMAKE_CURRENT_SOURCE_DIR@/docs
+
+FULL_PATH_NAMES        = YES
+STRIP_FROM_INC_PATH    = @CMAKE_CURRENT_SOURCE_DIR@/kcp/include
+
+HTML_EXTRA_FILES       = @CMAKE_CURRENT_BINARY_DIR@/_deps/doxygentheme-src/doxygen-awesome-darkmode-toggle.js
+HTML_EXTRA_STYLESHEET  = @CMAKE_CURRENT_BINARY_DIR@/_deps/doxygentheme-src/doxygen-awesome.css \ 
+                         @CMAKE_CURRENT_BINARY_DIR@/_deps/doxygentheme-src/doxygen-awesome-sidebar-only.css \
+                         @CMAKE_CURRENT_BINARY_DIR@/_deps/doxygentheme-src/doxygen-awesome-sidebar-only-darkmode-toggle.css
+HTML_HEADER            = @CMAKE_CURRENT_SOURCE_DIR@/docs/header.html
+HTML_FOOTER            = @CMAKE_CURRENT_SOURCE_DIR@/docs/footer.html
+
+USE_MDFILE_AS_MAINPAGE = @CMAKE_CURRENT_SOURCE_DIR@/docs/mainpage.md
+
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = @CMAKE_CURRENT_SOURCE_DIR@
