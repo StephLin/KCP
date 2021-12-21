@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usages',['Usages',['../md_docs_usages.html',1,'']]]
+  ['remarks',['Remarks',['../md_docs_remarks.html',1,'']]]
 ];

@@ -85,7 +85,7 @@ var NAVTREEINDEX0 =
 "keypoint_8hpp_source.html":[5,0,0,0,0,1],
 "md_docs_examples.html":[1],
 "md_docs_installation.html":[0],
-"md_docs_usages.html":[2],
+"md_docs_remarks.html":[2],
 "namespacekcp.html":[4,0,0],
 "namespacekcp.html":[3,0,0],
 "namespacekcp_1_1keypoint.html":[4,0,0,0],

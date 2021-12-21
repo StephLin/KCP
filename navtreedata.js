@@ -3,7 +3,7 @@ var NAVTREE =
   [ "KCP", "index.html", [
     [ "Installation", "md_docs_installation.html", null ],
     [ "Examples", "md_docs_examples.html", null ],
-    [ "Usages", "md_docs_usages.html", null ],
+    [ "Remarks", "md_docs_remarks.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
