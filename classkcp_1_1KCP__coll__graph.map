@@ -1,0 +1,5 @@
+<map id="kcp::KCP" name="kcp::KCP">
+<area shape="rect" id="node2" href="$classkcp_1_1AbstractSolver.html" title="Abstract class for point cloud registration solvers. " alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node3" href="$structkcp_1_1KCP_1_1Params.html" title="Type of parameters for the KCP&#45;TEASER solver. " alt="" coords="177,5,312,32"/>
+<area shape="rect" id="node4" href="$structkcp_1_1Correspondences.html" title="Data structure for point correspondences. " alt="" coords="337,5,502,32"/>
+</map>
