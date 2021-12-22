@@ -56,7 +56,7 @@ repository. Thank you!
 
 The project is originally developed in **Ubuntu 18.04**, and the following
 instruction supposes that you are using Ubuntu 18.04 as well. I am not sure if
-it also works with other Ubuntu versions of other Linux distributions, but maybe
+it also works with other Ubuntu versions or other Linux distributions, but maybe
 you can give it a try :+1:
 
 Also, please feel free to open an issue if you encounter any problems of the

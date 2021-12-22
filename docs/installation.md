@@ -23,7 +23,7 @@ You have to prepare the following packages or libraries used in KCP:
 
 ```bash
 sudo apt update
-sudo apt install -y g++ build-essential cmake libeigen3-dev git
+sudo apt install -y g++ build-essential libeigen3-dev git
 
 sudo apt install -y software-properties-common lsb-release
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null
