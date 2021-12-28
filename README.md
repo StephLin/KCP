@@ -40,6 +40,7 @@ repository. Thank you!
 
 **Table of Contents**
 
+- [:package: Resources](#package-resources)
 - [:gear: Installation](#gear-installation)
   - [Step 1. Preparing the Dependencies](#step-1-preparing-the-dependencies)
   - [Step 2. Preparing Dependencies of Python Binding (Optional)](#step-2-preparing-dependencies-of-python-binding-optional)
@@ -51,6 +52,11 @@ repository. Thank you!
   - [Controlling Computational Cost](#controlling-computational-cost)
   - [Torwarding Global Registration Approaches](#torwarding-global-registration-approaches)
 - [:gift: Acknowledgement](#gift-acknowledgement)
+
+## :package: Resources
+
+- [API Documentation](https://stephlin.github.io/KCP)
+- [Complete result of the experiment of robustness](https://gpl.cs.nctu.edu.tw/Steve-Lin/KCP/robustness.html)
 
 ## :gear: Installation
 
