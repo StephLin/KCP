@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=flat)](https://opensource.org/licenses/BSD-3-Clause)
 [![Build](https://github.com/StephLin/KCP/actions/workflows/build-deploy.yml/badge.svg)](https://StephLin.github.io/KCP)
 
-The official implementation of KCP: k Closest Points and Maximum Clique Pruning
+The official implementation of KCP: K-Closest Points and Maximum Clique Pruning
 for Efficient and Effective 3D Laser Scan Matching, accepted for publication in
 the IEEE Robotics and Automation Letters (RA-L).
 

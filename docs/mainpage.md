@@ -2,7 +2,7 @@
 
 pdf | [code](https://github.com/StephLin/KCP) | [video](https://youtu.be/ZaDLEOz_yYc)
 
-The official implementation of KCP: k Closest Points and Maximum Clique Pruning
+The official implementation of KCP: K-Closest Points and Maximum Clique Pruning
 for Efficient and Effective 3D Laser Scan Matching, accepted for publication in
 the IEEE Robotics and Automation Letters (RA-L).
 
