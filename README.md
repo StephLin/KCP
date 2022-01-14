@@ -19,18 +19,18 @@ binding of KCP (pykcp).
 
 For more, please refer to our paper:
 
-- Yu-Kai Lin, Wen-Chieh Lin, Chieh-Chih Wang, **KCP: k-Closest Points and Maximum Clique Pruning for Efficient and Effective 3D Laser Scan Matching**. To appear in _IEEE Robotics and Automation Letters (RA-L)_, 2022. (pdf) ([code](https://github.com/StephLin/KCP)) ([video](https://youtu.be/ZaDLEOz_yYc))
+- Yu-Kai Lin, Wen-Chieh Lin, Chieh-Chih Wang, **K-Closest Points and Maximum Clique Pruning for Efficient and Effective 3-D Laser Scan Matching**. _IEEE Robotics and Automation Letters (RA-L)_, vol.7, no. 2, pp. 1471 -- 1477, Apr. 2022. (pdf) ([code](https://github.com/StephLin/KCP)) ([video](https://youtu.be/ZaDLEOz_yYc))
 
 If you use this project in your research, please cite:
 
 ```bibtex
 @article{lin2022kcp,
-  title={{KCP: k-Closest Points and Maximum Clique Pruning for Efficient and Effective 3D Laser Scan Matching}},
+  title={K-Closest Points and Maximum Clique Pruning for Efficient and Effective 3-D Laser Scan Matching},
   author={Lin, Yu-Kai and Lin, Wen-Chieh and Wang, Chieh-Chih},
   journal={IEEE Robotics and Automation Letters},
-  volume={#},
-  number={#},
-  pages={#--#},
+  volume={7},
+  number={2},
+  pages={1471--1477},
   year={2022},
 }
 ```
@@ -43,8 +43,13 @@ repository. Thank you!
 - [:package: Resources](#package-resources)
 - [:gear: Installation](#gear-installation)
   - [Step 1. Preparing the Dependencies](#step-1-preparing-the-dependencies)
+    - [GCC, CMake, Git, and Eigen3](#gcc-cmake-git-and-eigen3)
+    - [nanoflann](#nanoflann)
+    - [TEASER++](#teaser)
   - [Step 2. Preparing Dependencies of Python Binding (Optional)](#step-2-preparing-dependencies-of-python-binding-optional)
   - [Step 3. Building KCP](#step-3-building-kcp)
+    - [Without Python Binding](#without-python-binding)
+    - [With Python Binding](#with-python-binding)
   - [Step 4. Installing KCP to the System (Optional)](#step-4-installing-kcp-to-the-system-optional)
 - [:seedling: Examples](#seedling-examples)
 - [:memo: Some Remarks](#memo-some-remarks)
