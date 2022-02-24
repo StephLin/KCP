@@ -1,6 +1,6 @@
 # KCP
 
-pdf | [code](https://github.com/StephLin/KCP) | [video](https://youtu.be/ZaDLEOz_yYc)
+[paper](https://doi.org/10.1109/LRA.2021.3140130) | [preprint](https://gpl.cs.nctu.edu.tw/Steve-Lin/KCP/preprint.pdf) | [code](https://github.com/StephLin/KCP) | [video](https://youtu.be/ZaDLEOz_yYc)
 
 The official implementation of KCP: K-Closest Points and Maximum Clique Pruning
 for Efficient and Effective 3D Laser Scan Matching, accepted for publication in
@@ -18,7 +18,7 @@ support <b>Python</b> binding of KCP (pykcp).
 
 For more, please refer to our paper:
 
-- Yu-Kai Lin, Wen-Chieh Lin, Chieh-Chih Wang, **K-Closest Points and Maximum Clique Pruning for Efficient and Effective 3-D Laser Scan Matching**. _IEEE Robotics and Automation Letters (RA-L)_, vol.7, no. 2, pp. 1471 -- 1477, Apr. 2022. (pdf) ([code](https://github.com/StephLin/KCP)) ([video](https://youtu.be/ZaDLEOz_yYc))
+- Yu-Kai Lin, Wen-Chieh Lin, Chieh-Chih Wang, **K-Closest Points and Maximum Clique Pruning for Efficient and Effective 3-D Laser Scan Matching**. _IEEE Robotics and Automation Letters (RA-L)_, vol.7, no. 2, pp. 1471 -- 1477, Apr. 2022. ([paper](https://doi.org/10.1109/LRA.2021.3140130)) ([preprint](https://gpl.cs.nctu.edu.tw/Steve-Lin/KCP/preprint.pdf)) ([code](https://github.com/StephLin/KCP)) ([video](https://youtu.be/ZaDLEOz_yYc))
 
 If you use this project in your research, please cite:
 
@@ -31,6 +31,7 @@ If you use this project in your research, please cite:
   number={2},
   pages={1471--1477},
   year={2022},
+  doi={10.1109/LRA.2021.3140130},
 }
 ```
 
