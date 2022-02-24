@@ -2,12 +2,15 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-import os
+import os.path as osp
 import sys
 from functools import partial
 
+__dir__ = osp.dirname(osp.abspath(__file__))
+
 try:
-    sys.path.insert(0, "../../build/python")
+    pykcp_path = osp.join(__dir__, "../../build/python")
+    sys.path.insert(0, pykcp_path)
     import pykcp
 except ImportError:
     print("Oops, We cannot import pykcp!")
@@ -18,8 +21,8 @@ import numpy as np
 import open3d as o3d
 from scipy.spatial.transform.rotation import Rotation as R
 
-source_point_cloud_filename = "data/1531883530.949817000.pcd"
-target_point_cloud_filename = "data/1531883530.449377000.pcd"
+source_point_cloud_filename = osp.join(__dir__, "data/1531883530.949817000.pcd")
+target_point_cloud_filename = osp.join(__dir__, "data/1531883530.449377000.pcd")
 
 snapshot_path = "snapshot.png"
 
@@ -162,8 +165,7 @@ def visualize(
     return vis
 
 
-# def main():
-if __name__ == "__main__":
+def main():
     # 1. Load point clouds.
     source_o3d = o3d.io.read_point_cloud(source_point_cloud_filename)
     target_o3d = o3d.io.read_point_cloud(target_point_cloud_filename)
@@ -201,5 +203,5 @@ if __name__ == "__main__":
     )
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

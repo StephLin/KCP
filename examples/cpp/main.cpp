@@ -57,7 +57,7 @@ int main() {
   /**
    * 1. Load point clouds and convert their types to Eigen::MatrixX3d.
    */
-  std::string source_point_cloud_filename = "data/1531883530.699853000.pcd";
+  std::string source_point_cloud_filename = "data/1531883530.949817000.pcd";
   std::string target_point_cloud_filename = "data/1531883530.449377000.pcd";
 
   pcl::PointCloud<pcl::PointXYZI> source_pcl_cloud;
