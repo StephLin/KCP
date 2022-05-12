@@ -23,11 +23,13 @@ You have to prepare the following packages or libraries used in KCP:
 
 ```bash
 sudo apt update
-sudo apt install -y g++ build-essential libeigen3-dev git
+sudo apt install -y g++ build-essential libeigen3-dev git software-properties-common lsb-release
 
-sudo apt install -y software-properties-common lsb-release
-wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null
-sudo apt update
+# If you want to obtain newer version of cmake, run the following commands: (Ref: https://apt.kitware.com/)
+# wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
+# echo "deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null
+# sudo apt update
+
 sudo apt install cmake
 ```
 
