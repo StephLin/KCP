@@ -87,6 +87,7 @@ int main() {
   auto params = kcp::KCP::Params();
 
   params.k                  = 2;
+  params.verbose            = true;
   params.teaser.noise_bound = 0.06;
 
   auto solver = kcp::KCP(params);

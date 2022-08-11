@@ -5,6 +5,8 @@
 #include "kcp/solver.hpp"
 #include "kcp/utility.hpp"
 
+#include <iostream>
+
 namespace kcp {
 
 /* ----------------------------------- KCP ---------------------------------- */
@@ -25,8 +27,10 @@ void KCP::solve(const Eigen::MatrixX3d& src,
 
   // Trigger the TEASER++ solver, where the maximum clique pruning will be
   // executed within the solver
+  if (!this->params.verbose) std::cout.setstate(std::ios_base::failbit);
   this->solver.solve(correspondences->points.first,
                      correspondences->points.second);
+  if (!this->params.verbose) std::cout.clear();
 
   // Extract the estimation result
   auto solution                    = this->solver.getSolution();

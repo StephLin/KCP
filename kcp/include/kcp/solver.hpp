@@ -94,11 +94,20 @@ class KCP : public AbstractSolver {
     size_t k;
 
     /**
+     * @brief Enabling debug messages. Default by ``false``.
+     *
+     * @warning It will mute all messages in TEASER++ if it is set to ``false``.
+     *
+     */
+    bool verbose;
+
+    /**
      * @brief Construct a new KCP::Params object.
      * 
      */
     Params() {
       k                                    = 2;
+      verbose                              = false;
       teaser.noise_bound                   = 0.06;
       teaser.cbar2                         = 1;
       teaser.estimate_scaling              = false;

@@ -41,23 +41,24 @@ repository. Thank you!
 
 **Table of Contents**
 
-- [:package: Resources](#package-resources)
-- [:gear: Installation](#gear-installation)
-  - [Step 1. Preparing the Dependencies](#step-1-preparing-the-dependencies)
-    - [GCC, CMake, Git, and Eigen3](#gcc-cmake-git-and-eigen3)
-    - [nanoflann](#nanoflann)
-    - [TEASER++](#teaser)
-  - [Step 2. Preparing Dependencies of Python Binding (Optional)](#step-2-preparing-dependencies-of-python-binding-optional)
-  - [Step 3. Building KCP](#step-3-building-kcp)
-    - [Without Python Binding](#without-python-binding)
-    - [With Python Binding](#with-python-binding)
-  - [Step 4. Installing KCP to the System (Optional)](#step-4-installing-kcp-to-the-system-optional)
-- [:seedling: Examples](#seedling-examples)
-- [:memo: Some Remarks](#memo-some-remarks)
-  - [Tuning Parameters](#tuning-parameters)
-  - [Controlling Computational Cost](#controlling-computational-cost)
-  - [Torwarding Global Registration Approaches](#torwarding-global-registration-approaches)
-- [:gift: Acknowledgement](#gift-acknowledgement)
+- [KCP](#kcp)
+  - [:package: Resources](#package-resources)
+  - [:gear: Installation](#gear-installation)
+    - [Step 1. Preparing the Dependencies](#step-1-preparing-the-dependencies)
+      - [GCC, CMake, Git, and Eigen3](#gcc-cmake-git-and-eigen3)
+      - [nanoflann](#nanoflann)
+      - [TEASER++](#teaser)
+    - [Step 2. Preparing Dependencies of Python Binding (Optional)](#step-2-preparing-dependencies-of-python-binding-optional)
+    - [Step 3. Building KCP](#step-3-building-kcp)
+      - [Without Python Binding](#without-python-binding)
+      - [With Python Binding](#with-python-binding)
+    - [Step 4. Installing KCP to the System (Optional)](#step-4-installing-kcp-to-the-system-optional)
+  - [:seedling: Examples](#seedling-examples)
+  - [:memo: Some Remarks](#memo-some-remarks)
+    - [Tuning Parameters](#tuning-parameters)
+    - [Controlling Computational Cost](#controlling-computational-cost)
+    - [Torwarding Global Registration Approaches](#torwarding-global-registration-approaches)
+  - [:gift: Acknowledgement](#gift-acknowledgement)
 
 ## :package: Resources
 
@@ -196,6 +197,9 @@ if a correspondence is correct. In our paper, we suggest `k=2` and `noise_bound`
 the 3-sigma (we use `noise_bound=0.06` meters for nuScenes data), and those are
 default values in the library.
 
+There is also a boolean parameter to enable debug messages called
+`kcp::KCP::Params::verbose` (default: `false`).
+
 To use different parameters to the KCP solver, please refer to the following
 snippets:
 
@@ -207,6 +211,7 @@ snippets:
 auto params = kcp::KCP::Params();
 
 params.k                  = 2;
+params.verbose            = false;
 params.teaser.noise_bound = 0.06;
 
 auto solver = kcp::KCP(params);
@@ -219,6 +224,7 @@ import pykcp
 
 params = pykcp.KCPParams()
 params.k = 2
+params.verbose = False
 params.teaser.noise_bound = 0.06
 
 solver = pykcp.KCP(params)
