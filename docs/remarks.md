@@ -13,6 +13,9 @@ if a correspondence is correct. In our paper, we suggest `k=2` and `noise_bound`
 the 3-sigma (we use `noise_bound=0.06` meters for nuScenes data), and those are
 default values in the library.
 
+There is also a boolean parameter to enable debug messages called
+`kcp::KCP::Params::verbose` (default: `false`).
+
 To use different parameters to the KCP solver, please refer to the following
 snippets:
 
@@ -24,6 +27,7 @@ snippets:
 auto params = kcp::KCP::Params();
 
 params.k                  = 2;
+params.verbose            = false;
 params.teaser.noise_bound = 0.06;
 
 auto solver = kcp::KCP(params);
@@ -36,6 +40,7 @@ import pykcp
 
 params = pykcp.KCPParams()
 params.k = 2
+params.verbose = False
 params.teaser.noise_bound = 0.06
 
 solver = pykcp.KCP(params)

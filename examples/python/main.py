@@ -180,6 +180,7 @@ def main():
     # 3. Estimate the transformation of two clouds with KCP-TEASER.
     params = pykcp.KCPParams()
     params.k = 2
+    params.verbose = True
     params.teaser.noise_bound = 0.06
 
     solver = pykcp.KCP(params)

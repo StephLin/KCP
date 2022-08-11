@@ -70,6 +70,7 @@ PYBIND11_MODULE(pykcp, m) {
   py::class_<kcp::KCP::Params>(m, "KCPParams")
       .def(py::init<>())
       .def_readwrite("k", &kcp::KCP::Params::k)
+      .def_readwrite("verbose", &kcp::KCP::Params::verbose)
       .def_readwrite("teaser", &kcp::KCP::Params::teaser);
 
   py::class_<kcp::KCP>(m, "KCP")
