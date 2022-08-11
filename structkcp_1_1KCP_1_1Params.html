@@ -116,6 +116,9 @@ Public Attributes</h2></td></tr>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkcp_1_1KCP_1_1Params.html#add6e6a1097f8f65fd47d815cb90ed095">k</a></td></tr>
 <tr class="memdesc:add6e6a1097f8f65fd47d815cb90ed095"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of closest points for each source point. Default by 2. <br /></td></tr>
 <tr class="separator:add6e6a1097f8f65fd47d815cb90ed095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525d586138650ca1b73dd4397c367f18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkcp_1_1KCP_1_1Params.html#a525d586138650ca1b73dd4397c367f18">verbose</a></td></tr>
+<tr class="memdesc:a525d586138650ca1b73dd4397c367f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enabling debug messages. Default by <code>false</code>.  <a href="#a525d586138650ca1b73dd4397c367f18">More...</a><br /></td></tr>
+<tr class="separator:a525d586138650ca1b73dd4397c367f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Type of parameters for the KCP-TEASER solver. </p>
@@ -134,6 +137,23 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 <p>Parameters for the original TEASER++ solver. The most frequently modified parameter in KCP-TEASER is <code>noise_bound</code>. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://teaser.readthedocs.io/en/latest/api-cpp.html#_CPPv4N6teaser24RobustRegistrationSolver6ParamsE">https://teaser.readthedocs.io/en/latest/api-cpp.html#_CPPv4N6teaser24RobustRegistrationSolver6ParamsE</a> </dd></dl>
+
+</div>
+</div>
+<a id="a525d586138650ca1b73dd4397c367f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525d586138650ca1b73dd4397c367f18">&#9670;&nbsp;</a></span>verbose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool kcp::KCP::Params::verbose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enabling debug messages. Default by <code>false</code>. </p>
+<dl class="section warning"><dt>Warning</dt><dd>It will mute all messages in TEASER++ if it is set to <code>false</code>. </dd></dl>
 
 </div>
 </div>

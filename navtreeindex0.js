@@ -88,8 +88,8 @@ var NAVTREEINDEX0 =
 "md_docs_remarks.html":[2],
 "namespacekcp.html":[4,0,0],
 "namespacekcp.html":[3,0,0],
-"namespacekcp_1_1keypoint.html":[4,0,0,0],
 "namespacekcp_1_1keypoint.html":[3,0,0,0],
+"namespacekcp_1_1keypoint.html":[4,0,0,0],
 "namespacemembers.html":[3,1,0],
 "namespacemembers_func.html":[3,1,1],
 "namespaces.html":[3,0],
@@ -101,6 +101,7 @@ var NAVTREEINDEX0 =
 "structkcp_1_1KCP_1_1Params.html":[4,0,0,3,0],
 "structkcp_1_1KCP_1_1Params.html#a011c4546df0d07aa51577ac4244b1117":[4,0,0,3,0,0],
 "structkcp_1_1KCP_1_1Params.html#a17e40818317000e82d07ed7dd68dc0ba":[4,0,0,3,0,2],
+"structkcp_1_1KCP_1_1Params.html#a525d586138650ca1b73dd4397c367f18":[4,0,0,3,0,3],
 "structkcp_1_1KCP_1_1Params.html#add6e6a1097f8f65fd47d815cb90ed095":[4,0,0,3,0,1],
 "utility_8hpp_source.html":[5,0,0,0,0,3]
 };
