@@ -42,7 +42,7 @@ get_kcp_correspondences(const Eigen::MatrixX3d& src,
     // Build the KD-tree of dst_feature, and query k closest points for each
     // source point.
     nanoflann::KDTreeEigenMatrixAdaptor<Eigen::MatrixXd> dst_tree(dim, std::cref(dst_feature), 10);
-    dst_tree.index->buildIndex();
+    dst_tree.index_->buildIndex();
 
     std::vector<double> point(dim);
     std::vector<size_t> indices(k);
@@ -56,7 +56,7 @@ get_kcp_correspondences(const Eigen::MatrixX3d& src,
       }
       result.init(&indices[0], &distances[0]);
 
-      dst_tree.index->findNeighbors(result, &point[0], nanoflann::SearchParams());
+      dst_tree.index_->findNeighbors(result, &point[0], nanoflann::SearchParameters());
 
       for (int i = 0; i < size; ++i) {
         int dst_index = indices[i];
