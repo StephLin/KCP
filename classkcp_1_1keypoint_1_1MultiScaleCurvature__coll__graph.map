@@ -1,3 +1,4 @@
 <map id="kcp::keypoint::MultiScaleCurvature" name="kcp::keypoint::MultiScaleCurvature">
-<area shape="rect" id="node2" href="$classkcp_1_1keypoint_1_1RangeImage.html" title="A range image of a point cloud based on the spherical projection. " alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node1" title="The multi&#45;scale curvature class for extracting corner points and plane points based on the range imag..." alt="" coords="12,95,197,136"/>
+<area shape="rect" id="node2" href="$classkcp_1_1keypoint_1_1RangeImage.html" title="A range image of a point cloud based on the spherical projection." alt="" coords="5,5,204,32"/>
 </map>
